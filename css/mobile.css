@@ -1,0 +1,63 @@
+body {
+  background-color: wheat;
+}
+
+#main-container {
+  background-color: white;
+}
+
+#nav-drawer {
+    background-color: #111;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+nav > a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+nav > a:hover {
+  color: #f1f1f1;
+}
+
+#open-nav-drawer {
+  border-radius: 3px;
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}
+
+#open-nav-drawer:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+#close-nav-drawer {
+  color: #818181;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 35px;
+  margin-left: 50px;
+}
+
+#close-nav-drawer:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+#main {
+  transition: margin-left 0.5s;
+}
