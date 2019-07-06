@@ -15,33 +15,48 @@
   <div id="main-container">
 
     <header id="header">
-      <div id="logo-container">
-        <img id="header-img" src="#" alt="Logo" />
-      </div>
       <div id="open-nav-drawer" onclick="openNavDrawer()">
         <img src="./img/bars-solid.svg" alt="menu-icon" />
       </div>
 
+      <div id="logo-container">
+        <img id="header-img" src="./img/logo_1.png" alt="Logo" />
+      </div>
+
+      <h1>Shredder Guitars</h1>
+
       <div id="nav-drawer">
         <span id="close-nav-drawer" onclick="closeNavDrawer()">&times;</span>
         <nav id="nav-bar">
-          <a href="#___">Features</a>
-          <a href="#___">How It Works</a>
-          <a href="#___">Pricing</a>
+          <a class="nav-link" href="#features" onclick="closeNavDrawer()">Features</a>
+          <a class="nav-link" href="#how-it-works" onclick="closeNavDrawer()">How It Works</a>
+          <a class="nav-link" href="#pricing" onclick="closeNavDrawer()">Pricing</a>
         </nav>
       </div>
     </header>
 
     <main id="main">
-      <h1>Shreder Guitars</h1>
-      <h2>Main Content Arear</h2>
+      <form id="form">
+        <input id="email" type="email" placeholder="Your Email"/>
+        <button id="submit" type="submit">Join Mailing List</button>
+      </form>
+
+      <div id="features">
+        Features
+      </div>
+
+      <div id="how-it-works">
+        How it works
+      </div>
+
+      <div id="pricing">
+        Pricing
+      </div>
     </main>
 
     <footer>
     </footer>
-
   </div>
-
 </body>
 
 </html>

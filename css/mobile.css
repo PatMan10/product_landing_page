@@ -1,13 +1,28 @@
 body {
-  background-color: wheat;
+  background-color: blue;
 }
 
 #main-container {
-  background-color: white;
+  background-color: wheat;
+}
+
+header {
+  width: 100%;
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+header>h1 {
+  display: inline;
+  position: relative;
+  font-family: zekton;
+  top: -12px;
 }
 
 #nav-drawer {
-    background-color: #111;
+  background-color: #111;
   height: 100%;
   width: 0;
   position: fixed;
@@ -19,7 +34,7 @@ body {
   transition: 0.5s;
 }
 
-nav > a {
+.nav-link {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -28,20 +43,34 @@ nav > a {
   transition: 0.3s;
 }
 
-nav > a:hover {
+.nav-link:hover {
   color: #f1f1f1;
 }
 
 #open-nav-drawer {
-  border-radius: 3px;
   height: 30px;
   width: 30px;
-  margin: 5px;
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  left: 5px;
+  margin-right: 5px;
 }
 
 #open-nav-drawer:hover {
   cursor: pointer;
   background-color: #f1f1f1;
+}
+
+#logo-container {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+#logo-container>img {
+  max-width: 100%;
+  height: auto;
 }
 
 #close-nav-drawer {
@@ -59,5 +88,24 @@ nav > a:hover {
 }
 
 #main {
-  transition: margin-left 0.5s;
+  background-color: red;
+  position: relative;
+  top: 57px;
+  padding: 10px;
+}
+
+#main>div {
+  height: 250px;
+}
+
+form>* {
+  display: block;
+  margin: auto;
+  border-radius: 3px;
+}
+
+form>input {
+  border: 1px solid grey;
+  padding: 2px;
+  margin-bottom: 10px;
 }
