@@ -94,8 +94,8 @@ header>h1 {
   padding: 10px;
 }
 
-#main>div {
-  height: 250px;
+#main>h2 {
+  text-align: center;
 }
 
 form>* {
@@ -108,4 +108,14 @@ form>input {
   border: 1px solid grey;
   padding: 2px;
   margin-bottom: 10px;
+}
+
+#features>h3,
+#features>p {
+  text-align: center;
+}
+
+#how-it-works>iframe {
+  width: 100%;
+  height: auto;
 }
