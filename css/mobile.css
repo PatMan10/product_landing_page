@@ -1,14 +1,10 @@
-body {
-  background-color: blue;
-}
-
 #main-container {
-  background-color: wheat;
+  background-color: #F5F5F5;
 }
 
 header {
   width: 100%;
-  background-color: purple;
+  background-color: silver;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -88,7 +84,6 @@ header>h1 {
 }
 
 #main {
-  background-color: red;
   position: relative;
   top: 57px;
   padding: 10px;
@@ -105,17 +100,63 @@ form>* {
 }
 
 form>input {
-  border: 1px solid grey;
+  border: 0.5px solid black;
   padding: 2px;
   margin-bottom: 10px;
 }
 
-#features>h3,
+#features>h2 {
+  text-align: center;
+}
+
 #features>p {
   text-align: center;
+  font-size: 1.1em;
 }
 
 #how-it-works>iframe {
   width: 100%;
   height: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.guitar-type {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.guitar-type>span {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.guitar-type>h3 {
+  height: 30px;
+  text-align: center;
+  background-color: white;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.guitar-type>p {
+  text-align: center;
+  line-height: 140%;
+  font-size: 1.1em;
+}
+
+.guitar-type>button {
+  height: 40px;
+  width: 70px;
+  background-color: cyan;
+  border-radius: 6px;
+  font-size: 1.2em;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
 }
