@@ -1,9 +1,9 @@
 function openNavDrawer() {
   const navD = document.getElementById('nav-drawer')
-  navD.style.setProperty('width', '250px')
+  navD.style.setProperty('left', '0')
 }
 
 function closeNavDrawer() {
   const navD = document.getElementById('nav-drawer')
-  navD.style.setProperty('width', '0')
+  navD.style.setProperty('left', '-250px')
 }

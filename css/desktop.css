@@ -1,31 +1,31 @@
-@media (min-width: 600px) {
-  body {
-    background-color: red;
-  }
-
-  #main-container {
-    position: relative;
-    top: 20px;
-    height: 1000px;
-  }
-
-  #nav-drawer {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    top: 0;
-    left: 0;
-    padding: 0;
-    clear: both;
-  }
-
+@media (min-width: 601px) {
   #open-nav-drawer,
   #close-nav-drawer {
     display: none;
   }
 
-  nav>a {
-    display: inline-block;
+  #nav-drawer {
+    width: auto;
+    background-color: #111;
+    position: static;
+    padding: 0;
+    clear: both;
+    overflow: visible;
+    clear: both;
+  }
+
+  .nav-link {
+    display: inline;
+    border: 1px solid red;
+    margin: 0;
+  }
+
+  .nav-link {
+    display: inline;
     font-size: 20px;
+  }
+
+  #section-pricing {
+    flex-direction: row;
   }
 }
