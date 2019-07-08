@@ -1,4 +1,4 @@
-#main-container {
+body {
   background-color: #F5F5F5;
 }
 
@@ -86,7 +86,7 @@ header>h1 {
 #main {
   position: relative;
   top: 57px;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
 }
 
 #main>h2 {
@@ -100,26 +100,47 @@ form>* {
 }
 
 form>input {
-  border: 0.5px solid black;
-  padding: 2px;
+  padding: 4px;
   margin-bottom: 10px;
 }
 
-#features>h2 {
+form>input[type="email"] {
+  border: 0.5px solid black;
+}
+
+form>input[type="submit"] {
+  height: 30px;
+  width: 60px;
+  border-radius: 6px;
+  background-color: #00ff00;
+  font-weight: bold;
+}
+
+form,
+section[id*="section"] {
+  margin-bottom: 40px;
+}
+
+form,
+#section-features {
+  border-bottom: 1px solid silver;
+}
+
+#section-features>h2 {
   text-align: center;
 }
 
-#features>p {
+#section-features>p {
   text-align: center;
   font-size: 1.1em;
 }
 
-#how-it-works>iframe {
+#section-how-it-works>iframe {
   width: 100%;
   height: auto;
 }
 
-.flex-container {
+#section-pricing {
   display: flex;
   flex-direction: column;
 }
@@ -139,7 +160,7 @@ form>input {
 .guitar-type>h3 {
   height: 30px;
   text-align: center;
-  background-color: white;
+  background-color: silver;
   margin-top: 0;
   padding-top: 10px;
 }
@@ -153,10 +174,26 @@ form>input {
 .guitar-type>button {
   height: 40px;
   width: 70px;
-  background-color: cyan;
+  background-color: #ffd700;
+  border: 1px solid #e7c300;
   border-radius: 6px;
   font-size: 1.2em;
   display: block;
   margin: auto;
   margin-bottom: 10px;
+}
+
+footer {
+  max-width: 100%;
+  padding: 10px;
+  position: relative;
+  top: 58px;
+  background-color: silver;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#footer-nav>a {
+  text-decoration: none;
 }

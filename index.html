@@ -12,98 +12,101 @@
 
 <body>
 
-  <div id="main-container">
+  <header id="header">
+    <div id="open-nav-drawer" onclick="openNavDrawer()">
+      <img src="./img/bars-solid.svg" alt="menu-icon" />
+    </div>
 
-    <header id="header">
-      <div id="open-nav-drawer" onclick="openNavDrawer()">
-        <img src="./img/bars-solid.svg" alt="menu-icon" />
+    <div id="logo-container">
+      <img id="header-img" src="./img/logo_1.png" alt="Logo" />
+    </div>
+
+    <h1>Shredder Guitars</h1>
+
+    <div id="nav-drawer">
+      <span id="close-nav-drawer" onclick="closeNavDrawer()">&times;</span>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#section-features" onclick="closeNavDrawer()">Features</a>
+        <a class="nav-link" href="#section-how-it-works" onclick="closeNavDrawer()">How It Works</a>
+        <a class="nav-link" href="#section-pricing" onclick="closeNavDrawer()">Pricing</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+    <h2>Join our mailing list</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" name="email" placeholder="Your Email" required />
+      <input id="submit" type="submit" value="Join" />
+    </form>
+
+    <section id="section-features">
+      <h2>Premium Materials</h2>
+      <p>Our guitars use the best materials which are sourced locally. This will increase the longevity of your purchase.</p>
+
+      <h2>Fast Shipping</h2>
+      <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+
+      <h2>Quality Assurance</h2>
+      <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+    </section>
+
+    <section id="section-how-it-works">
+      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+    </section>
+
+    <section id="section-pricing">
+      <div class="guitar-type">
+        <h3>Acoustic Guitar</h3>
+        <span>R1500</span>
+        <p>
+          Hollow koa wood body.<br>
+          Spruce wood soundboard.<br>
+          Efficient energy transfer.<br>
+          Additional coupling.<br>
+          Resonance effect.
+        </p>
+
+        <button>BUY</button>
       </div>
 
-      <div id="logo-container">
-        <img id="header-img" src="./img/logo_1.png" alt="Logo" />
+      <div class="guitar-type">
+        <h3>Bass Guitar</h3>
+        <span>R2500</span>
+        <p>
+          Fretted.<br>
+          Five strings.<br>
+          Solid ash wood body.<br>
+          Neck-through construction.<br>
+          Ergonomic design.
+        </p>
+        <button>BUY</button>
       </div>
 
-      <h1>Shredder Guitars</h1>
-
-      <div id="nav-drawer">
-        <span id="close-nav-drawer" onclick="closeNavDrawer()">&times;</span>
-        <nav id="nav-bar">
-          <a class="nav-link" href="#features" onclick="closeNavDrawer()">Features</a>
-          <a class="nav-link" href="#how-it-works" onclick="closeNavDrawer()">How It Works</a>
-          <a class="nav-link" href="#pricing" onclick="closeNavDrawer()">Pricing</a>
-        </nav>
+      <div class="guitar-type">
+        <h3>Electric Guitar</h3>
+        <span>R3500</span>
+        <p>
+          Solid mahogany wood body.<br>
+          Seven strings.<br>
+          Efficient energy transfer.<br>
+          Equipped with Rick-O-Sound.
+        </p>
+        <button>BUY</button>
       </div>
-    </header>
+    </section>
+  </main>
 
+  <footer>
+    <nav id="footer-nav">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </nav>
+    <p>Copyright 2019, Shredder Guitars</p>
+  </footer>
 
-    <main id="main">
-      <h2>Join our mailing list</h2>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="email" type="email" name="email" placeholder="Your Email" />
-        <input id="submit" type="submit" value="Join" />
-      </form>
-
-      <div id="features">
-        <h2>Premium Materials</h2>
-        <p>Our guitars use the best materials which are sourced locally. This will increase the longevity of your purchase.</p>
-
-        <h2>Fast Shipping</h2>
-        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
-
-        <h2>Quality Assurance</h2>
-        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
-      </div>
-
-      <div id="how-it-works">
-        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-      </div>
-
-      <div id="pricing" class="flex-container">
-        <div class="guitar-type">
-          <h3>Acoustic Guitar</h3>
-          <span>R1500</span>
-          <p>
-            Hollow koa wood body.<br>
-            Spruce wood soundboard.<br>
-            Efficient energy transfer.<br>
-            Additional coupling.<br>
-            Resonance effect.
-          </p>
-
-          <button>BUY</button>
-        </div>
-
-        <div class="guitar-type">
-          <h3>Bass Guitar</h3>
-          <span>R2500</span>
-          <p>
-            Fretted.<br>
-            Five strings.<br>
-            Solid ash wood body.<br>
-            Neck-through construction.<br>
-            Ergonomic design.
-          </p>
-          <button>BUY</button>
-        </div>
-
-        <div class="guitar-type">
-          <h3>Electric Guitar</h3>
-          <span>R3500</span>
-          <p>
-            Solid mahogany wood body.<br>
-            Seven strings.<br>
-            Efficient energy transfer.<br>
-            Equipped with Rick-O-Sound.
-          </p>
-          <button>BUY</button>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <p>Hello, I'm a paragraph.</p>
-    </footer>
-  </div>
 </body>
 
 </html>
