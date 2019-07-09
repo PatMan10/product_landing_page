@@ -11,6 +11,10 @@ header {
   z-index: 2;
 }
 
+h1, h2, h3 {
+  font-family: zekton;
+}
+
 #open-nav-drawer {
   height: 30px;
   width: 30px;
@@ -43,7 +47,6 @@ header>h1 {
   display: inline;
   position: relative;
   top: -12px;
-  font-family: zekton;
 }
 
 #nav-drawer {
@@ -190,7 +193,7 @@ form,
 }
 
 footer {
-  max-width: 100%;
+  width: 100%;
   padding: 10px;
   position: relative;
   top: 58px;
