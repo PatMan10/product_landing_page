@@ -14,13 +14,15 @@ main {
   overflow: hide;
 }
 
+main>h2 {
+  margin-top: 0;
+}
+
 header {
   width: 100%;
   padding: 10px;
   background-color: silver;
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -94,11 +96,9 @@ header>h1 {
   cursor: pointer;
 }
 
-
-
 #main {
   position: relative;
-  top: 57px;
+  top: 72px;
   padding: 10px 10px 20px 10px;
 }
 
@@ -203,7 +203,7 @@ form,
 footer {
   padding: 10px;
   position: relative;
-  top: 58px;
+  top: 74px;
   background-color: silver;
   display: flex;
   flex-direction: column;
