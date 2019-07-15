@@ -1,6 +1,5 @@
 body {
-  /*  background-color: #F6F5F5;*/
-  background-color: gold;
+  background-color: #F6F5F5;
 }
 
 h1 {
@@ -17,7 +16,6 @@ p {
 }
 
 main {
-  background-color: purple;
   overflow: hide;
 }
 
@@ -40,16 +38,21 @@ header {
 }
 
 #open-nav-drawer:hover {
-  cursor: pointer;
+  background-color: #f1f1f1;
 }
 
 #logo-container {
   height: 50px;
   width: 50px;
   margin-right: 8px;
+  border-radius: 4px;
 }
 
-#logo-container>img {
+#logo-container:hover {
+  background-color: #f1f1f1;
+}
+
+#logo-container img {
   max-width: 100%;
   height: auto;
 }
@@ -96,7 +99,6 @@ header>h1 {
 
 #close-nav-drawer:hover {
   color: #f1f1f1;
-  cursor: pointer;
 }
 
 #main {
@@ -143,17 +145,18 @@ form,
   border-bottom: 1px solid silver;
 }
 
-#section-features>h2 {
+#section-features>h2,
+#section-features>p {
   text-align: center;
 }
 
 #section-features>p {
-  text-align: center;
   font-size: 1.1em;
 }
 
 #section-how-it-works>iframe {
-  width: 100%;
+  border: 0;
+  width: 99.9%;
   min-height: 300px;
 }
 
@@ -175,7 +178,7 @@ form,
 }
 
 .guitar-type>h3 {
-  height: 30px;
+  min-height: 30px;
   text-align: center;
   background-color: silver;
   margin-top: 0;
@@ -186,6 +189,7 @@ form,
   text-align: center;
   line-height: 140%;
   font-size: 1.1em;
+  padding: 5px;
 }
 
 .guitar-type>button {

@@ -1,15 +1,29 @@
 @media (min-width: 601px) {
   body {
-    background-color: cyan;
   }
-  
+
   main {
-    background-color: pink;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  header {
+    display: block;
   }
 
   #open-nav-drawer,
   #close-nav-drawer {
     display: none;
+  }
+
+  #logo-container,
+  header>h1 {
+    display: inline-block;
+  }
+
+  header>h1 {
+    position: relative;
+    top: -10px;
   }
 
   #nav-drawer {
@@ -30,10 +44,28 @@
   }
 
   #main {
-    top: 100px;
+    top: 110px;
+  }
+
+  #section-features>h2,
+  #section-features>p {
+    text-align: left;
+  }
+
+  #section-how-it-works>iframe {
+    min-height: 400px;
   }
 
   #section-pricing {
     flex-direction: row;
+    justify-content: center;
+  }
+
+  .guitar-type {
+    margin: 0 8px 0 8px;
+  }
+
+  footer {
+   top: 111px; 
   }
 }
