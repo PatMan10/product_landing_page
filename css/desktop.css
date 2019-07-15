@@ -1,4 +1,12 @@
 @media (min-width: 601px) {
+  body {
+    background-color: cyan;
+  }
+  
+  main {
+    background-color: pink;
+  }
+
   #open-nav-drawer,
   #close-nav-drawer {
     display: none;
@@ -22,7 +30,7 @@
   }
 
   #main {
-    top: 70px;
+    top: 100px;
   }
 
   #section-pricing {
