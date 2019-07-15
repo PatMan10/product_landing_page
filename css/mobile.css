@@ -3,19 +3,22 @@ body {
   background-color: gold;
 }
 
-h1,
-h2,
-h3 {
+h1 {
   font-family: zekton;
+}
+
+h2 {
+  font-family: monospace;
+  font-size: 1.8em;
+}
+
+p {
+  font-family: tahoma;
 }
 
 main {
   background-color: purple;
   overflow: hide;
-}
-
-main>h2 {
-  margin-top: 0;
 }
 
 header {
@@ -102,22 +105,19 @@ header>h1 {
   padding: 10px 10px 20px 10px;
 }
 
-#main>h2 {
-  text-align: center;
-}
-
 form {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-form>* {
-  display: block;
-  margin: auto;
-  border-radius: 3px;
+form>h2 {
+  text-align: center;
 }
 
 form>input {
   padding: 4px;
+  border-radius: 3px;
   margin-bottom: 10px;
 }
 
