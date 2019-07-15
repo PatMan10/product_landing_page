@@ -1,7 +1,4 @@
 @media (min-width: 601px) {
-  body {
-  }
-
   main {
     width: 70%;
     margin: 0 auto;
@@ -56,6 +53,12 @@
     min-height: 400px;
   }
 
+  footer {
+    top: 111px;
+  }
+}
+
+@media (min-width: 800px) {
   #section-pricing {
     flex-direction: row;
     justify-content: center;
@@ -63,9 +66,5 @@
 
   .guitar-type {
     margin: 0 8px 0 8px;
-  }
-
-  footer {
-   top: 111px; 
   }
 }
